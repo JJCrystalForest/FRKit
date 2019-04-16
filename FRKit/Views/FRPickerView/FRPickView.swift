@@ -35,6 +35,9 @@ class FRPickView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
     
     /// 传入的数据模型
     var pickerTitles : [String]
+    /// 选中后的回调
+    var didFinish : ((_ pickerModel : FRPickerModel) -> ())?
+    
     /// 背景 view
     private let backView = UIView()
     /// pickerView
@@ -44,28 +47,40 @@ class FRPickView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         let model = FRPickerModel(index: 0, text: "")
         return model
     }()
-    /// 选中后的回调
-    var didFinish : ((_ pickerModel : FRPickerModel) -> ())?
     /// 工具条
     private let toolView = UIView()
     /// 工具条高度
     private let toolViewHieght : CGFloat = 44
     
+    /// 构造方法，自行使用 didFinish 属性拿到回调数据
+    ///
+    /// - Parameters:
+    ///   - frame: frame
+    ///   - titles: titles
     init(_ frame : CGRect, _ titles : [String]) {
         self.pickerTitles = titles
         super.init(frame: frame)
         setupUI()
     }
     
-    convenience init (_ frame : CGRect, _ titles : [String], _ didFinish : ((FRPickerModel) -> ())?) {
+    /// 便利构造方法，使用这个方法进行初始化
+    ///
+    /// - Parameters:
+    ///   - frame: frame
+    ///   - titles: titles
+    ///   - selectIndex: 当前下标
+    ///   - didFinish: 回调
+    convenience init (_ frame : CGRect, _ titles : [String], _ selectIndex : Int = 0, _ didFinish : ((FRPickerModel) -> ())?) {
         self.init(frame, titles)
         self.didFinish = didFinish
+        if selectIndex > 0 && selectIndex < pickerTitles.count { pickerView.selectRow(selectIndex, inComponent: 0, animated: true) }
     }
     
+    /// 不支持 xib 创建
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     private func setupUI() {
-        backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        backgroundColor = .clear
         
         // 背景 view
         backView.frame = UIScreen.main.bounds
@@ -109,7 +124,9 @@ class FRPickView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     @objc private func displayBackView() {
-        backView.isHidden = !backView.isHidden
+        if !backView.isHidden {
+            self.removeFromSuperview()
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
