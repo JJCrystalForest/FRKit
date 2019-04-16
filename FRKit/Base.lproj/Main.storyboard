@@ -23,7 +23,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="display"/>
                                 <connections>
-                                    <action selector="displayPicker" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hi7-Ac-OAn"/>
+                                    <action selector="displayPicker" destination="BYZ-38-t0r" eventType="touchUpInside" id="7I7-Ap-qo0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv1-I5-xnS">
@@ -44,7 +44,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="titleLabel" destination="nv1-I5-xnS" id="JYf-Vm-XNT"/>
+                        <outlet property="titleLabel" destination="nv1-I5-xnS" id="jum-ML-JNr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
