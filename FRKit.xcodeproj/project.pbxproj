@@ -12,6 +12,7 @@
 		05AC10C22264D0FA00A43233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AC10C02264D0FA00A43233 /* Main.storyboard */; };
 		05AC10C42264D0FB00A43233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AC10C32264D0FB00A43233 /* Assets.xcassets */; };
 		05AC10C72264D0FB00A43233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AC10C52264D0FB00A43233 /* LaunchScreen.storyboard */; };
+		05AC10E72264D1D300A43233 /* FRPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC10E62264D1D300A43233 /* FRPickView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		05AC10C32264D0FB00A43233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05AC10C62264D0FB00A43233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05AC10C82264D0FB00A43233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05AC10E62264D1D300A43233 /* FRPickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRPickView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		05AC10BB2264D0FA00A43233 /* FRKit */ = {
 			isa = PBXGroup;
 			children = (
+				05AC10E42264D1C300A43233 /* Views */,
 				05AC10BC2264D0FA00A43233 /* AppDelegate.swift */,
 				05AC10BE2264D0FA00A43233 /* ViewController.swift */,
 				05AC10C02264D0FA00A43233 /* Main.storyboard */,
@@ -62,6 +65,22 @@
 				05AC10C82264D0FB00A43233 /* Info.plist */,
 			);
 			path = FRKit;
+			sourceTree = "<group>";
+		};
+		05AC10E42264D1C300A43233 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05AC10E52264D1C300A43233 /* FRPickerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05AC10E52264D1C300A43233 /* FRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				05AC10E62264D1D300A43233 /* FRPickView.swift */,
+			);
+			path = FRPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +109,7 @@
 		05AC10B12264D0FA00A43233 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FR;
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = free;
@@ -136,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05AC10BF2264D0FA00A43233 /* ViewController.swift in Sources */,
+				05AC10E72264D1D300A43233 /* FRPickView.swift in Sources */,
 				05AC10BD2264D0FA00A43233 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

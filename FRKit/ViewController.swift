@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        var titles = [String]()
+        for index in 0..<100 { titles.append("test_" + "\(index)") }
+        let picker = FRPickView(UIScreen.main.bounds, titles) { print("\($0)") }
+        view.addSubview(picker)
     }
-
 
 }
 
