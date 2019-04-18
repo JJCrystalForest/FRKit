@@ -12,8 +12,9 @@ struct TitleModel {
     var text : String
 }
 
-class BasicViewComtroller: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BasicViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    //MARK:- property
     private var fr_pickerView_selectIndex = 0
     
     private let models : [TitleModel] = {
@@ -29,10 +30,12 @@ class BasicViewComtroller: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.dataSource = self
         tableView.register(UINib(nibName: "\(FRBasicCell.self)", bundle: nil), forCellReuseIdentifier: "\(FRBasicCell.self)")
         tableView.rowHeight = 50
+        tableView.contentInset = UIEdgeInsets(top: 4, left: 0, bottom: 4, right: 0)
         tableView.separatorStyle = .none
         return tableView
     }()
 
+    //MARK:- life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -44,10 +47,12 @@ class BasicViewComtroller: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     private func setupUI() {
+        navigationItem.title = "FRKit"
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         view.addSubview(tableView)
     }
     
+    //MARK:- UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return models.count
     }
@@ -71,8 +76,9 @@ class BasicViewComtroller: UIViewController, UITableViewDelegate, UITableViewDat
 
 }
 
-extension BasicViewComtroller {
+extension BasicViewController {
     
+    //MARK:- FRPickerView
     private func showPickerView() {
         var titles = [String]()
         for index in 0..<100 { titles.append("test_" + "\(index)") }

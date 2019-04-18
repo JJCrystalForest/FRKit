@@ -15,13 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        window?.rootViewController = BasicViewComtroller()
+        setupWindow()
         
         return true
     }
 
+    private func setupWindow() {
+        let basicViewCtrl = BasicViewController()
+        let basicNavigationCtrl = FRBasicNavigationController.init(rootViewController: basicViewCtrl)
+        
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = basicNavigationCtrl
+    }
 
 }
 

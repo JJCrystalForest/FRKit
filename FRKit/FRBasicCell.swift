@@ -14,10 +14,25 @@ class FRBasicCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        contentView.layer.borderWidth = 1
+        contentView.layer.borderColor = UIColor.groupTableViewBackground.cgColor
+        contentView.layer.cornerRadius = 5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    override var frame: CGRect {
+        didSet {
+            var newFrame = frame
+            newFrame.origin.x += 8
+            newFrame.size.width -= 16
+            newFrame.origin.y += 4
+            newFrame.size.height -= 8
+            super.frame = newFrame
+        }
     }
     
 }
