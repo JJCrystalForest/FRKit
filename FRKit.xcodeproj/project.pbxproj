@@ -15,10 +15,11 @@
 		05AC10E72264D1D300A43233 /* FRPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC10E62264D1D300A43233 /* FRPickView.swift */; };
 		05AC112D22660CB900A43233 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC112C22660CB900A43233 /* BasicViewController.swift */; };
 		05AC11342266150D00A43233 /* FRBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC11322266150D00A43233 /* FRBasicCell.swift */; };
-		05AC11352266150D00A43233 /* FRBasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05AC11332266150D00A43233 /* FRBasicCell.xib */; };
 		05AC11372268AA2B00A43233 /* FRBasicNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC11362268AA2B00A43233 /* FRBasicNavigationController.swift */; };
 		05AC113A2268B03700A43233 /* Lang+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC11392268B03700A43233 /* Lang+Extension.swift */; };
 		05AC113C2268B05600A43233 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC113B2268B05600A43233 /* UIColor+Extension.swift */; };
+		05AC113F2268C2C100A43233 /* FRHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC113D2268C2C100A43233 /* FRHomeCell.swift */; };
+		05AC11402268C2C100A43233 /* FRHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05AC113E2268C2C100A43233 /* FRHomeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +33,11 @@
 		05AC10E62264D1D300A43233 /* FRPickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRPickView.swift; sourceTree = "<group>"; };
 		05AC112C22660CB900A43233 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		05AC11322266150D00A43233 /* FRBasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRBasicCell.swift; sourceTree = "<group>"; };
-		05AC11332266150D00A43233 /* FRBasicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FRBasicCell.xib; sourceTree = "<group>"; };
 		05AC11362268AA2B00A43233 /* FRBasicNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRBasicNavigationController.swift; sourceTree = "<group>"; };
 		05AC11392268B03700A43233 /* Lang+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lang+Extension.swift"; sourceTree = "<group>"; };
 		05AC113B2268B05600A43233 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		05AC113D2268C2C100A43233 /* FRHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRHomeCell.swift; sourceTree = "<group>"; };
+		05AC113E2268C2C100A43233 /* FRHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FRHomeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +76,8 @@
 				05AC11362268AA2B00A43233 /* FRBasicNavigationController.swift */,
 				05AC112C22660CB900A43233 /* BasicViewController.swift */,
 				05AC11322266150D00A43233 /* FRBasicCell.swift */,
-				05AC11332266150D00A43233 /* FRBasicCell.xib */,
+				05AC113D2268C2C100A43233 /* FRHomeCell.swift */,
+				05AC113E2268C2C100A43233 /* FRHomeCell.xib */,
 				05AC10BE2264D0FA00A43233 /* ViewController.swift */,
 				05AC10C02264D0FA00A43233 /* Main.storyboard */,
 				05AC10C32264D0FB00A43233 /* Assets.xcassets */,
@@ -168,9 +171,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05AC11402268C2C100A43233 /* FRHomeCell.xib in Resources */,
 				05AC10C72264D0FB00A43233 /* LaunchScreen.storyboard in Resources */,
 				05AC10C42264D0FB00A43233 /* Assets.xcassets in Resources */,
-				05AC11352266150D00A43233 /* FRBasicCell.xib in Resources */,
 				05AC10C22264D0FA00A43233 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +192,7 @@
 				05AC10E72264D1D300A43233 /* FRPickView.swift in Sources */,
 				05AC113A2268B03700A43233 /* Lang+Extension.swift in Sources */,
 				05AC10BD2264D0FA00A43233 /* AppDelegate.swift in Sources */,
+				05AC113F2268C2C100A43233 /* FRHomeCell.swift in Sources */,
 				05AC113C2268B05600A43233 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
