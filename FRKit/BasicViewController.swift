@@ -13,9 +13,14 @@ private struct CellModel {
     /// text
     var text : String
     /// 复用标识，与cell同名
-    var reuseIdentifierID : String
+    var reuseIdentifierID : String = "\(FRHomeCell.self)"
     /// 方法名
-    var method : String
+    var method : Selector
+    
+    init(text : String, method : Selector) {
+        self.text = text
+        self.method = method
+    }
 }
 
 class BasicViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -25,8 +30,13 @@ class BasicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     private let models : [CellModel] = {
         var models = [CellModel]()
-        let model = CellModel(text: "FRPickerView (轻量级封装 UIPickerView)", reuseIdentifierID: "\(FRHomeCell.self)", method: "showPickerView")
+        var model = CellModel.init(text: "FRPickerView (轻量级封装 UIPickerView)", method: #selector(showPickerView))
         models.append(model)
+        
+        model.text = "炫酷 UITableViewCell 动画效果"
+        model.method = #selector(showFRTableViewAnimationViewController)
+        models.append(model)
+        
         return models
     }()
     
@@ -53,6 +63,7 @@ class BasicViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.frame = view.bounds
     }
     
+    /// 初始化 UI
     private func setupUI() {
         navigationItem.title = "FRKit"
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -72,13 +83,12 @@ class BasicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        switch indexPath.row {
-            
-        case 0: self.showPickerView() // FRPickerView
-            
-        default: break
-        }
+        perform(models[indexPath.row].method)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 1)
+        UIView.animate(withDuration: 0.5) {  cell.layer.transform = CATransform3DMakeScale(1, 1, 1)  }
     }
 
 }
@@ -86,13 +96,18 @@ class BasicViewController: UIViewController, UITableViewDelegate, UITableViewDat
 extension BasicViewController {
     
     //MARK:- FRPickerView
-    private func showPickerView() {
+    @objc private func showPickerView() {
         var titles = [String]()
         for index in 0..<100 { titles.append("test_" + "\(index)") }
         let picker = FRPickView(view.bounds, titles, fr_pickerView_selectIndex) { [weak self] (model) in
             self?.fr_pickerView_selectIndex = model.index
         }
         view.addSubview(picker)
+    }
+    
+    //MARK:- 炫酷 UITableViewCell 动画效果
+    @objc private func showFRTableViewAnimationViewController() {
+        navigationController?.pushViewController(FRTableViewAnimationViewController(), animated: true)
     }
     
 }

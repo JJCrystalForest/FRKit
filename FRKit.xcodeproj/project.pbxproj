@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052E1E00227895880074B830 /* FRWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E1DFE227895880074B830 /* FRWaterfallCell.swift */; };
+		052E1E01227895880074B830 /* FRWaterfallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052E1DFF227895880074B830 /* FRWaterfallCell.xib */; };
+		052E1E03227898390074B830 /* FRWaterfallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E1E02227898390074B830 /* FRWaterfallModel.swift */; };
 		05AC10BD2264D0FA00A43233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC10BC2264D0FA00A43233 /* AppDelegate.swift */; };
 		05AC10BF2264D0FA00A43233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC10BE2264D0FA00A43233 /* ViewController.swift */; };
 		05AC10C22264D0FA00A43233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AC10C02264D0FA00A43233 /* Main.storyboard */; };
@@ -20,9 +23,15 @@
 		05AC113C2268B05600A43233 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC113B2268B05600A43233 /* UIColor+Extension.swift */; };
 		05AC113F2268C2C100A43233 /* FRHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC113D2268C2C100A43233 /* FRHomeCell.swift */; };
 		05AC11402268C2C100A43233 /* FRHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05AC113E2268C2C100A43233 /* FRHomeCell.xib */; };
+		05AC1148226A210500A43233 /* FRTableViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC1147226A210500A43233 /* FRTableViewAnimationViewController.swift */; };
+		05AC114C226ABF4600A43233 /* FRWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC114B226ABF4600A43233 /* FRWaterfallLayout.swift */; };
+		05AC114E226AD34B00A43233 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05AC114D226AD34B00A43233 /* image1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		052E1DFE227895880074B830 /* FRWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRWaterfallCell.swift; sourceTree = "<group>"; };
+		052E1DFF227895880074B830 /* FRWaterfallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FRWaterfallCell.xib; sourceTree = "<group>"; };
+		052E1E02227898390074B830 /* FRWaterfallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRWaterfallModel.swift; sourceTree = "<group>"; };
 		05AC10B92264D0FA00A43233 /* FRKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AC10BC2264D0FA00A43233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05AC10BE2264D0FA00A43233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +47,9 @@
 		05AC113B2268B05600A43233 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		05AC113D2268C2C100A43233 /* FRHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRHomeCell.swift; sourceTree = "<group>"; };
 		05AC113E2268C2C100A43233 /* FRHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FRHomeCell.xib; sourceTree = "<group>"; };
+		05AC1147226A210500A43233 /* FRTableViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRTableViewAnimationViewController.swift; sourceTree = "<group>"; };
+		05AC114B226ABF4600A43233 /* FRWaterfallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRWaterfallLayout.swift; sourceTree = "<group>"; };
+		05AC114D226AD34B00A43233 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 		05AC10BB2264D0FA00A43233 /* FRKit */ = {
 			isa = PBXGroup;
 			children = (
+				05AC1141226A20E200A43233 /* Functions */,
 				05AC11382268ADC300A43233 /* Extensions */,
 				05AC10E42264D1C300A43233 /* Views */,
 				05AC10BC2264D0FA00A43233 /* AppDelegate.swift */,
@@ -110,6 +123,59 @@
 				05AC113B2268B05600A43233 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05AC1141226A20E200A43233 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				05AC1142226A20E200A43233 /* UITableViewAmimations */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		05AC1142226A20E200A43233 /* UITableViewAmimations */ = {
+			isa = PBXGroup;
+			children = (
+				05AC1143226A20E200A43233 /* ViewModel */,
+				05AC1144226A20E200A43233 /* Controller */,
+				05AC1145226A20E200A43233 /* Model */,
+				05AC1146226A20E200A43233 /* View */,
+			);
+			path = UITableViewAmimations;
+			sourceTree = "<group>";
+		};
+		05AC1143226A20E200A43233 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				05AC114D226AD34B00A43233 /* image1.jpg */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		05AC1144226A20E200A43233 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05AC1147226A210500A43233 /* FRTableViewAnimationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05AC1145226A20E200A43233 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05AC114B226ABF4600A43233 /* FRWaterfallLayout.swift */,
+				052E1E02227898390074B830 /* FRWaterfallModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05AC1146226A20E200A43233 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				052E1DFE227895880074B830 /* FRWaterfallCell.swift */,
+				052E1DFF227895880074B830 /* FRWaterfallCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				052E1E01227895880074B830 /* FRWaterfallCell.xib in Resources */,
 				05AC11402268C2C100A43233 /* FRHomeCell.xib in Resources */,
+				05AC114E226AD34B00A43233 /* image1.jpg in Resources */,
 				05AC10C72264D0FB00A43233 /* LaunchScreen.storyboard in Resources */,
 				05AC10C42264D0FB00A43233 /* Assets.xcassets in Resources */,
 				05AC10C22264D0FA00A43233 /* Main.storyboard in Resources */,
@@ -186,10 +254,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				05AC11342266150D00A43233 /* FRBasicCell.swift in Sources */,
+				052E1E03227898390074B830 /* FRWaterfallModel.swift in Sources */,
 				05AC112D22660CB900A43233 /* BasicViewController.swift in Sources */,
+				052E1E00227895880074B830 /* FRWaterfallCell.swift in Sources */,
 				05AC11372268AA2B00A43233 /* FRBasicNavigationController.swift in Sources */,
 				05AC10BF2264D0FA00A43233 /* ViewController.swift in Sources */,
 				05AC10E72264D1D300A43233 /* FRPickView.swift in Sources */,
+				05AC114C226ABF4600A43233 /* FRWaterfallLayout.swift in Sources */,
+				05AC1148226A210500A43233 /* FRTableViewAnimationViewController.swift in Sources */,
 				05AC113A2268B03700A43233 /* Lang+Extension.swift in Sources */,
 				05AC10BD2264D0FA00A43233 /* AppDelegate.swift in Sources */,
 				05AC113F2268C2C100A43233 /* FRHomeCell.swift in Sources */,
