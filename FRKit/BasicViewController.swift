@@ -30,12 +30,14 @@ class BasicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     private let models : [CellModel] = {
         var models = [CellModel]()
-        var model = CellModel.init(text: "FRPickerView (轻量级封装 UIPickerView)", method: #selector(showPickerView))
-        models.append(model)
+        var model1 = CellModel.init(text: "FRPickerView (轻量级封装 UIPickerView)", method: #selector(showPickerView))
+        models.append(model1)
         
-        model.text = "炫酷 UITableViewCell 动画效果"
-        model.method = #selector(showFRTableViewAnimationViewController)
-        models.append(model)
+        var model2 = CellModel.init(text: "炫酷 UITableViewCell 动画效果", method: #selector(showFRTableViewAnimationViewController))
+        models.append(model2)
+        
+        var model3 = CellModel.init(text: "仿灭霸动画消失效果", method: #selector(showMiebaViewController))
+        models.append(model3)
         
         return models
     }()
@@ -108,6 +110,11 @@ extension BasicViewController {
     //MARK:- 炫酷 UITableViewCell 动画效果
     @objc private func showFRTableViewAnimationViewController() {
         navigationController?.pushViewController(FRTableViewAnimationViewController(), animated: true)
+    }
+
+    //MARK:- 灭霸消失效果
+    @objc private func showMiebaViewController() {
+        navigationController?.pushViewController(FRMiebaViewController(), animated: true)
     }
     
 }

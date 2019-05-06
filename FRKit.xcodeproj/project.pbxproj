@@ -26,6 +26,18 @@
 		05AC1148226A210500A43233 /* FRTableViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC1147226A210500A43233 /* FRTableViewAnimationViewController.swift */; };
 		05AC114C226ABF4600A43233 /* FRWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC114B226ABF4600A43233 /* FRWaterfallLayout.swift */; };
 		05AC114E226AD34B00A43233 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05AC114D226AD34B00A43233 /* image1.jpg */; };
+		BB6CF9AF227FDBA7007A5C3C /* thanos_dust_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB6CF9A7227FDBA7007A5C3C /* thanos_dust_4.mp3 */; };
+		BB6CF9B0227FDBA7007A5C3C /* thanos_dust_5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB6CF9A8227FDBA7007A5C3C /* thanos_dust_5.mp3 */; };
+		BB6CF9B1227FDBA7007A5C3C /* thanos_dust_6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB6CF9A9227FDBA7007A5C3C /* thanos_dust_6.mp3 */; };
+		BB6CF9B2227FDBA7007A5C3C /* thanos_dust_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB6CF9AA227FDBA7007A5C3C /* thanos_dust_2.mp3 */; };
+		BB6CF9B3227FDBA7007A5C3C /* thanos_dust_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB6CF9AB227FDBA7007A5C3C /* thanos_dust_3.mp3 */; };
+		BB6CF9B4227FDBA7007A5C3C /* thanos_dust_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB6CF9AC227FDBA7007A5C3C /* thanos_dust_1.mp3 */; };
+		BB6CF9B5227FDBA7007A5C3C /* thanos_snap_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB6CF9AD227FDBA7007A5C3C /* thanos_snap_sound.mp3 */; };
+		BB6CF9B6227FDBA7007A5C3C /* thanos_reverse_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB6CF9AE227FDBA7007A5C3C /* thanos_reverse_sound.mp3 */; };
+		BB6CF9BA227FE168007A5C3C /* AnimatableSpriteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9B7227FE168007A5C3C /* AnimatableSpriteLayer.swift */; };
+		BB6CF9BB227FE168007A5C3C /* ThanosGauntlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9B8227FE168007A5C3C /* ThanosGauntlet.swift */; };
+		BB6CF9BC227FE168007A5C3C /* DustEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9B9227FE168007A5C3C /* DustEffectView.swift */; };
+		BB6CF9BE227FE18F007A5C3C /* FRMiebaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9BD227FE18F007A5C3C /* FRMiebaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +62,18 @@
 		05AC1147226A210500A43233 /* FRTableViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRTableViewAnimationViewController.swift; sourceTree = "<group>"; };
 		05AC114B226ABF4600A43233 /* FRWaterfallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRWaterfallLayout.swift; sourceTree = "<group>"; };
 		05AC114D226AD34B00A43233 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		BB6CF9A7227FDBA7007A5C3C /* thanos_dust_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_dust_4.mp3; sourceTree = "<group>"; };
+		BB6CF9A8227FDBA7007A5C3C /* thanos_dust_5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_dust_5.mp3; sourceTree = "<group>"; };
+		BB6CF9A9227FDBA7007A5C3C /* thanos_dust_6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_dust_6.mp3; sourceTree = "<group>"; };
+		BB6CF9AA227FDBA7007A5C3C /* thanos_dust_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_dust_2.mp3; sourceTree = "<group>"; };
+		BB6CF9AB227FDBA7007A5C3C /* thanos_dust_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_dust_3.mp3; sourceTree = "<group>"; };
+		BB6CF9AC227FDBA7007A5C3C /* thanos_dust_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_dust_1.mp3; sourceTree = "<group>"; };
+		BB6CF9AD227FDBA7007A5C3C /* thanos_snap_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_snap_sound.mp3; sourceTree = "<group>"; };
+		BB6CF9AE227FDBA7007A5C3C /* thanos_reverse_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_reverse_sound.mp3; sourceTree = "<group>"; };
+		BB6CF9B7227FE168007A5C3C /* AnimatableSpriteLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableSpriteLayer.swift; sourceTree = "<group>"; };
+		BB6CF9B8227FE168007A5C3C /* ThanosGauntlet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGauntlet.swift; sourceTree = "<group>"; };
+		BB6CF9B9227FE168007A5C3C /* DustEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DustEffectView.swift; sourceTree = "<group>"; };
+		BB6CF9BD227FE18F007A5C3C /* FRMiebaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRMiebaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,17 +108,14 @@
 			children = (
 				05AC1141226A20E200A43233 /* Functions */,
 				05AC11382268ADC300A43233 /* Extensions */,
+				BB6CF99E227FD33C007A5C3C /* Base */,
 				05AC10E42264D1C300A43233 /* Views */,
+				BB6CF99F227FD367007A5C3C /* SupportFiles */,
 				05AC10BC2264D0FA00A43233 /* AppDelegate.swift */,
-				05AC11362268AA2B00A43233 /* FRBasicNavigationController.swift */,
 				05AC112C22660CB900A43233 /* BasicViewController.swift */,
-				05AC11322266150D00A43233 /* FRBasicCell.swift */,
 				05AC113D2268C2C100A43233 /* FRHomeCell.swift */,
 				05AC113E2268C2C100A43233 /* FRHomeCell.xib */,
 				05AC10BE2264D0FA00A43233 /* ViewController.swift */,
-				05AC10C02264D0FA00A43233 /* Main.storyboard */,
-				05AC10C32264D0FB00A43233 /* Assets.xcassets */,
-				05AC10C52264D0FB00A43233 /* LaunchScreen.storyboard */,
 				05AC10C82264D0FB00A43233 /* Info.plist */,
 			);
 			path = FRKit;
@@ -129,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				05AC1142226A20E200A43233 /* UITableViewAmimations */,
+				BB6CF997227FCC48007A5C3C /* 仿灭霸动画消失效果 */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -176,6 +198,84 @@
 				052E1DFF227895880074B830 /* FRWaterfallCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BB6CF997227FCC48007A5C3C /* 仿灭霸动画消失效果 */ = {
+			isa = PBXGroup;
+			children = (
+				BB6CF9A6227FDBA7007A5C3C /* Sounds */,
+				BB6CF998227FCC48007A5C3C /* ViewModel */,
+				BB6CF999227FCC48007A5C3C /* Controller */,
+				BB6CF99A227FCC48007A5C3C /* Model */,
+				BB6CF99B227FCC48007A5C3C /* View */,
+			);
+			path = "仿灭霸动画消失效果";
+			sourceTree = "<group>";
+		};
+		BB6CF998227FCC48007A5C3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB6CF999227FCC48007A5C3C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB6CF9BD227FE18F007A5C3C /* FRMiebaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB6CF99A227FCC48007A5C3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB6CF99B227FCC48007A5C3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB6CF9B7227FE168007A5C3C /* AnimatableSpriteLayer.swift */,
+				BB6CF9B9227FE168007A5C3C /* DustEffectView.swift */,
+				BB6CF9B8227FE168007A5C3C /* ThanosGauntlet.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB6CF99E227FD33C007A5C3C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				05AC11362268AA2B00A43233 /* FRBasicNavigationController.swift */,
+				05AC11322266150D00A43233 /* FRBasicCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BB6CF99F227FD367007A5C3C /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				05AC10C02264D0FA00A43233 /* Main.storyboard */,
+				05AC10C52264D0FB00A43233 /* LaunchScreen.storyboard */,
+				05AC10C32264D0FB00A43233 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		BB6CF9A6227FDBA7007A5C3C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BB6CF9A7227FDBA7007A5C3C /* thanos_dust_4.mp3 */,
+				BB6CF9A8227FDBA7007A5C3C /* thanos_dust_5.mp3 */,
+				BB6CF9A9227FDBA7007A5C3C /* thanos_dust_6.mp3 */,
+				BB6CF9AA227FDBA7007A5C3C /* thanos_dust_2.mp3 */,
+				BB6CF9AB227FDBA7007A5C3C /* thanos_dust_3.mp3 */,
+				BB6CF9AC227FDBA7007A5C3C /* thanos_dust_1.mp3 */,
+				BB6CF9AD227FDBA7007A5C3C /* thanos_snap_sound.mp3 */,
+				BB6CF9AE227FDBA7007A5C3C /* thanos_reverse_sound.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,10 +339,18 @@
 			files = (
 				052E1E01227895880074B830 /* FRWaterfallCell.xib in Resources */,
 				05AC11402268C2C100A43233 /* FRHomeCell.xib in Resources */,
+				BB6CF9B6227FDBA7007A5C3C /* thanos_reverse_sound.mp3 in Resources */,
+				BB6CF9B2227FDBA7007A5C3C /* thanos_dust_2.mp3 in Resources */,
 				05AC114E226AD34B00A43233 /* image1.jpg in Resources */,
+				BB6CF9B5227FDBA7007A5C3C /* thanos_snap_sound.mp3 in Resources */,
 				05AC10C72264D0FB00A43233 /* LaunchScreen.storyboard in Resources */,
+				BB6CF9AF227FDBA7007A5C3C /* thanos_dust_4.mp3 in Resources */,
+				BB6CF9B3227FDBA7007A5C3C /* thanos_dust_3.mp3 in Resources */,
+				BB6CF9B4227FDBA7007A5C3C /* thanos_dust_1.mp3 in Resources */,
 				05AC10C42264D0FB00A43233 /* Assets.xcassets in Resources */,
 				05AC10C22264D0FA00A43233 /* Main.storyboard in Resources */,
+				BB6CF9B1227FDBA7007A5C3C /* thanos_dust_6.mp3 in Resources */,
+				BB6CF9B0227FDBA7007A5C3C /* thanos_dust_5.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +364,19 @@
 				05AC11342266150D00A43233 /* FRBasicCell.swift in Sources */,
 				052E1E03227898390074B830 /* FRWaterfallModel.swift in Sources */,
 				05AC112D22660CB900A43233 /* BasicViewController.swift in Sources */,
+				BB6CF9BE227FE18F007A5C3C /* FRMiebaViewController.swift in Sources */,
 				052E1E00227895880074B830 /* FRWaterfallCell.swift in Sources */,
 				05AC11372268AA2B00A43233 /* FRBasicNavigationController.swift in Sources */,
 				05AC10BF2264D0FA00A43233 /* ViewController.swift in Sources */,
+				BB6CF9BB227FE168007A5C3C /* ThanosGauntlet.swift in Sources */,
+				BB6CF9BC227FE168007A5C3C /* DustEffectView.swift in Sources */,
 				05AC10E72264D1D300A43233 /* FRPickView.swift in Sources */,
 				05AC114C226ABF4600A43233 /* FRWaterfallLayout.swift in Sources */,
 				05AC1148226A210500A43233 /* FRTableViewAnimationViewController.swift in Sources */,
 				05AC113A2268B03700A43233 /* Lang+Extension.swift in Sources */,
 				05AC10BD2264D0FA00A43233 /* AppDelegate.swift in Sources */,
 				05AC113F2268C2C100A43233 /* FRHomeCell.swift in Sources */,
+				BB6CF9BA227FE168007A5C3C /* AnimatableSpriteLayer.swift in Sources */,
 				05AC113C2268B05600A43233 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5XB9M6U63;
 				INFOPLIST_FILE = FRKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5XB9M6U63;
 				INFOPLIST_FILE = FRKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
