@@ -38,6 +38,7 @@
 		BB6CF9BB227FE168007A5C3C /* ThanosGauntlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9B8227FE168007A5C3C /* ThanosGauntlet.swift */; };
 		BB6CF9BC227FE168007A5C3C /* DustEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9B9227FE168007A5C3C /* DustEffectView.swift */; };
 		BB6CF9BE227FE18F007A5C3C /* FRMiebaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9BD227FE18F007A5C3C /* FRMiebaViewController.swift */; };
+		DD0CDB642F12FF93A2B58568 /* Pods_FRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C995E1DCA6466B3259BBEDE4 /* Pods_FRKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		05AC1147226A210500A43233 /* FRTableViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRTableViewAnimationViewController.swift; sourceTree = "<group>"; };
 		05AC114B226ABF4600A43233 /* FRWaterfallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRWaterfallLayout.swift; sourceTree = "<group>"; };
 		05AC114D226AD34B00A43233 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		0F5B4821029235978C2B0200 /* Pods-FRKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRKit.debug.xcconfig"; path = "Target Support Files/Pods-FRKit/Pods-FRKit.debug.xcconfig"; sourceTree = "<group>"; };
+		98E2381B8AA91EFD05E4ED33 /* Pods-FRKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRKit.release.xcconfig"; path = "Target Support Files/Pods-FRKit/Pods-FRKit.release.xcconfig"; sourceTree = "<group>"; };
 		BB6CF9A7227FDBA7007A5C3C /* thanos_dust_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_dust_4.mp3; sourceTree = "<group>"; };
 		BB6CF9A8227FDBA7007A5C3C /* thanos_dust_5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_dust_5.mp3; sourceTree = "<group>"; };
 		BB6CF9A9227FDBA7007A5C3C /* thanos_dust_6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thanos_dust_6.mp3; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		BB6CF9B8227FE168007A5C3C /* ThanosGauntlet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGauntlet.swift; sourceTree = "<group>"; };
 		BB6CF9B9227FE168007A5C3C /* DustEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DustEffectView.swift; sourceTree = "<group>"; };
 		BB6CF9BD227FE18F007A5C3C /* FRMiebaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRMiebaViewController.swift; sourceTree = "<group>"; };
+		C995E1DCA6466B3259BBEDE4 /* Pods_FRKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0CDB642F12FF93A2B58568 /* Pods_FRKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,8 @@
 			children = (
 				05AC10BB2264D0FA00A43233 /* FRKit */,
 				05AC10BA2264D0FA00A43233 /* Products */,
+				860DBAC4B0E67A181E475A98 /* Pods */,
+				A69AC9EFFA4D90884CD76639 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +207,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		860DBAC4B0E67A181E475A98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F5B4821029235978C2B0200 /* Pods-FRKit.debug.xcconfig */,
+				98E2381B8AA91EFD05E4ED33 /* Pods-FRKit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A69AC9EFFA4D90884CD76639 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C995E1DCA6466B3259BBEDE4 /* Pods_FRKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB6CF997227FCC48007A5C3C /* 仿灭霸动画消失效果 */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05AC10CB2264D0FB00A43233 /* Build configuration list for PBXNativeTarget "FRKit" */;
 			buildPhases = (
+				DAD679F1A152A57D6E6A552A /* [CP] Check Pods Manifest.lock */,
 				05AC10B52264D0FA00A43233 /* Sources */,
 				05AC10B62264D0FA00A43233 /* Frameworks */,
 				05AC10B72264D0FA00A43233 /* Resources */,
+				CC614E2296AC56172EC524C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,6 +382,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC614E2296AC56172EC524C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FRKit/Pods-FRKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FRKit/Pods-FRKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD679F1A152A57D6E6A552A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FRKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05AC10B52264D0FA00A43233 /* Sources */ = {
@@ -521,8 +595,10 @@
 		};
 		05AC10CC2264D0FB00A43233 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5B4821029235978C2B0200 /* Pods-FRKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5XB9M6U63;
 				INFOPLIST_FILE = FRKit/Info.plist;
@@ -533,6 +609,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.youngfree.FRKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -540,8 +617,10 @@
 		};
 		05AC10CD2264D0FB00A43233 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E2381B8AA91EFD05E4ED33 /* Pods-FRKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5XB9M6U63;
 				INFOPLIST_FILE = FRKit/Info.plist;
@@ -552,6 +631,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.youngfree.FRKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
