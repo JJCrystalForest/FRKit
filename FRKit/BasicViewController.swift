@@ -33,11 +33,13 @@ class BasicViewController: UIViewController, UITableViewDelegate, UITableViewDat
         var model1 = CellModel.init(text: "FRPickerView (轻量级封装 UIPickerView)", method: #selector(showPickerView))
         models.append(model1)
         
-        var model2 = CellModel.init(text: "炫酷 UITableViewCell 动画效果", method: #selector(showFRTableViewAnimationViewController))
+        var model2 = CellModel.init(text: "炫酷 UITableViewCell 动画效果", method: #selector(toFRTableViewAnimationViewController))
         models.append(model2)
         
-        var model3 = CellModel.init(text: "仿灭霸动画消失效果", method: #selector(showMiebaViewController))
+        var model3 = CellModel.init(text: "仿灭霸动画消失效果", method: #selector(toMiebaViewController))
         models.append(model3)
+        
+        var model4 = CellModel.init(text: "RxSwift Demo", method: #selector(toRxSwiftDemoViewController))
         
         return models
     }()
@@ -108,13 +110,18 @@ extension BasicViewController {
     }
     
     //MARK:- 炫酷 UITableViewCell 动画效果
-    @objc private func showFRTableViewAnimationViewController() {
+    @objc private func toFRTableViewAnimationViewController() {
         navigationController?.pushViewController(FRTableViewAnimationViewController(), animated: true)
     }
 
     //MARK:- 灭霸消失效果
-    @objc private func showMiebaViewController() {
+    @objc private func toMiebaViewController() {
         navigationController?.pushViewController(FRMiebaViewController(), animated: true)
+    }
+    
+    //MARK:- RxSwift Demo
+    @objc private func toRxSwiftDemoViewController() {
+        navigationController?.pushViewController(FRRxSwfitViewController(), animated: true)
     }
     
 }

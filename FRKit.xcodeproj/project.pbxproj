@@ -38,6 +38,7 @@
 		BB6CF9BB227FE168007A5C3C /* ThanosGauntlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9B8227FE168007A5C3C /* ThanosGauntlet.swift */; };
 		BB6CF9BC227FE168007A5C3C /* DustEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9B9227FE168007A5C3C /* DustEffectView.swift */; };
 		BB6CF9BE227FE18F007A5C3C /* FRMiebaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CF9BD227FE18F007A5C3C /* FRMiebaViewController.swift */; };
+		BB706E982283C11B00FD7AE5 /* FRRxSwfitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB706E972283C11B00FD7AE5 /* FRRxSwfitViewController.swift */; };
 		DD0CDB642F12FF93A2B58568 /* Pods_FRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C995E1DCA6466B3259BBEDE4 /* Pods_FRKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		BB6CF9B8227FE168007A5C3C /* ThanosGauntlet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosGauntlet.swift; sourceTree = "<group>"; };
 		BB6CF9B9227FE168007A5C3C /* DustEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DustEffectView.swift; sourceTree = "<group>"; };
 		BB6CF9BD227FE18F007A5C3C /* FRMiebaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRMiebaViewController.swift; sourceTree = "<group>"; };
+		BB706E972283C11B00FD7AE5 /* FRRxSwfitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRRxSwfitViewController.swift; sourceTree = "<group>"; };
 		C995E1DCA6466B3259BBEDE4 /* Pods_FRKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				05AC113D2268C2C100A43233 /* FRHomeCell.swift */,
 				05AC113E2268C2C100A43233 /* FRHomeCell.xib */,
 				05AC10BE2264D0FA00A43233 /* ViewController.swift */,
+				BB706E972283C11B00FD7AE5 /* FRRxSwfitViewController.swift */,
 				05AC10C82264D0FB00A43233 /* Info.plist */,
 			);
 			path = FRKit;
@@ -213,7 +216,6 @@
 				0F5B4821029235978C2B0200 /* Pods-FRKit.debug.xcconfig */,
 				98E2381B8AA91EFD05E4ED33 /* Pods-FRKit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -393,12 +395,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FRKit/Pods-FRKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +453,7 @@
 				05AC10E72264D1D300A43233 /* FRPickView.swift in Sources */,
 				05AC114C226ABF4600A43233 /* FRWaterfallLayout.swift in Sources */,
 				05AC1148226A210500A43233 /* FRTableViewAnimationViewController.swift in Sources */,
+				BB706E982283C11B00FD7AE5 /* FRRxSwfitViewController.swift in Sources */,
 				05AC113A2268B03700A43233 /* Lang+Extension.swift in Sources */,
 				05AC10BD2264D0FA00A43233 /* AppDelegate.swift in Sources */,
 				05AC113F2268C2C100A43233 /* FRHomeCell.swift in Sources */,
