@@ -29,17 +29,16 @@ class BasicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     private var fr_pickerView_selectIndex = 0
     
     private let models : [CellModel] = {
-        var models = [CellModel]()
+        
         var model1 = CellModel.init(text: "FRPickerView (轻量级封装 UIPickerView)", method: #selector(showPickerView))
-        models.append(model1)
         
         var model2 = CellModel.init(text: "炫酷 UITableViewCell 动画效果", method: #selector(toFRTableViewAnimationViewController))
-        models.append(model2)
         
         var model3 = CellModel.init(text: "仿灭霸动画消失效果", method: #selector(toMiebaViewController))
-        models.append(model3)
         
         var model4 = CellModel.init(text: "RxSwift Demo", method: #selector(toRxSwiftDemoViewController))
+        
+        let models = [model1, model2, model3, model4]
         
         return models
     }()
